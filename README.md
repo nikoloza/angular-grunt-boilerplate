@@ -1,21 +1,31 @@
-# EasyMoney
+# Angular Boilerplate
 
-![](https://codeship.com/projects/adf4f4c0-8ee9-0132-3c63-0a0cf4fe8e66/status?branch=master)
+To setup project node dependencies, you need to run:
 
+    $ npm install
 
-Create new instance could be:
+---
+
+To create new app you need to run following:
+
+    $ grunt create:app:<appname>
+
+---
+
+Creating of new instance could be:
 
     $ grunt create:<type>:<route/name>
 
+
 `types` can be:
 
-* app - generates app structure
-* route - puts new route in routes folder
-* service - puts new service in common/services folder
-* directive - puts new directive in common/directives folder
-* partial - puts new partial in common/partials folder
-* filter - puts new filter in common/filters folder
-* config - puts new config in common/configs folder
+* `app` - generates app structure
+* `route` - puts new route in routes folder
+* `service` - puts new service in common/services folder
+* `directive` - puts new directive in common/directives folder
+* `partial` - puts new partial in common/partials folder
+* `filter` - puts new filter in common/filters folder
+* `config` - puts new config in common/configs folder
 
 ---
 
