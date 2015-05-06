@@ -1,0 +1,34 @@
+{
+    "node": true,
+    "browser": true,
+    "bitwise": true,
+    "strict": false,
+    "quotmark": "single",
+    "undef": true,
+    "devel": true,
+    "globals": {
+        // app specific
+        "angular": true,
+        "app": true,
+        "ngapp": true,
+        "Hamster": true,
+
+        // map app custom globals
+        "$": true,
+        "L": true,
+
+        // jasmine
+        "inject": false,
+        "describe": false,
+        "xdescribe": false,
+        "ddescribe": false,
+        "it": false,
+        "xit": false,
+        "iit": false,
+        "beforeEach": false,
+        "afterEach": false,
+        "expect": false,
+        "pending": false,
+        "spyOn": false
+    }
+}
