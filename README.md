@@ -20,12 +20,12 @@ Creating of new instance could be:
 `types` can be:
 
 * `app` - generates app structure
-* `route` - puts new route in routes folder
-* `service` - puts new service in common/services folder
-* `directive` - puts new directive in common/directives folder
-* `partial` - puts new partial in common/partials folder
-* `filter` - puts new filter in common/filters folder
-* `config` - puts new config in common/configs folder
+* `route` - puts new route in routes folder. That can be put like an interihance `route/page1/page2`
+* `partial` - puts new partial and it's files in `partials/` folder
+* `service` - puts new service and it's files in `common/` folder
+* `directive` - puts new directive and it's files in `common/` folder
+* `filter` - puts new filter and it's files in `common/` folder
+* `config` - puts new config and it's files in `common/` folder
 
 ---
 
