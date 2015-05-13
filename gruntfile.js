@@ -380,7 +380,7 @@ module.exports = function(grunt) {
     // open website after build
     open: {
       dev: {
-        path: 'http://easymoney.ge'
+        path: 'http://localhost:9999'
       }
     },
 

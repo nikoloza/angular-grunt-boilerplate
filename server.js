@@ -10,7 +10,7 @@ app.route('/*').get(function(req, res) {
     res.sendFile(__dirname + '/.tmp/index.html');
 });
 
-app.listen(80);
+app.listen(9999);
 console.log('\n----------------------------------\n' +
-            'Magic happns on http://easymoney.ge/' +
+            'Magic happns on http://localhost:9999/' +
             '\n----------------------------------\n\n');

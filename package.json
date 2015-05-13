@@ -1,5 +1,5 @@
 {
-  "name": "EasyMoneyWeb",
+  "name": "clean-project",
   "version": "0.0.1",
   "description": "",
   "main": "gruntfile.js",
@@ -7,11 +7,14 @@
     "type": "git",
     "url": "git@bitbucket.org:ozorix/easymoney-web.git"
   },
+  "scripts": {
+    "start": "npm install && grunt inject"
+  },
   "dependencies": {
+    "express": "^4.11.2",
     "grunt": "^0.4.5"
   },
   "devDependencies": {
-    "express": "^4.11.2",
     "grunt-angular-gettext": "^2.0.1",
     "grunt-bower-concat": "^0.4.0",
     "grunt-bower-task": "^0.4.0",

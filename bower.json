@@ -1,9 +1,6 @@
 {
-  "name": "map-client",
+  "name": "clean-project",
   "version": "0.0.0",
-  "authors": [
-    "David Nadaraia <david.nadaraia@ozorix.com>"
-  ],
   "license": "MIT",
   "private": true,
   "ignore": [
