@@ -534,9 +534,14 @@ module.exports = function(grunt) {
     grunt.file.write(grunt.config.data.app.root + '/config.js', '// config\napp.constant(\'Config\', {\r\n\r\n});');
 
 
+
     // app.sass file
-    grunt.file.write(grunt.config.data.app.root + '/assets/sass/app.sass', '// injector:sass\n// endinjector:sass');
+    grunt.file.write(grunt.config.data.app.root + '/assets/sass/app.sass', '@import "colors.sass"\n@import "variables.sass"\n\n@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss"\n\n\n// injector:sass\n// endinjector:sass');
     console.log('App files has been created'.green);
+
+    // colors and variables sass files
+    grunt.file.write(grunt.config.data.app.root + '/assets/sass/colors.sass', '');
+    grunt.file.write(grunt.config.data.app.root + '/assets/sass/variables.sass', '');
 
     // create default route
     create('route', 'index');
