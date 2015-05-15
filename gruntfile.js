@@ -615,6 +615,8 @@ module.exports = function(grunt) {
 
     // create test file
     grunt.file.write(testPath + '/' + name + '.spec.js', getFileTemplate(name, 'spec.js', route, type));
+
+    grunt.task.run(['temp']);
   }
 
   // generate new templates depend on extension
