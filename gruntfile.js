@@ -503,6 +503,7 @@ module.exports = function(grunt) {
     grunt.file.mkdir(grunt.config.data.app.root + '/assets');
     grunt.file.mkdir(grunt.config.data.app.root + '/assets/img');
     grunt.file.mkdir(grunt.config.data.app.root + '/assets/sass');
+    grunt.file.mkdir(grunt.config.data.app.root + '/assets/sass/components');
     grunt.file.mkdir(grunt.config.data.app.root + '/assets/fonts');
     grunt.file.mkdir(grunt.config.data.app.root + '/assets/icons');
     grunt.file.mkdir(grunt.config.data.app.root + '/common');
