@@ -3,10 +3,6 @@
   "version": "0.0.1",
   "description": "",
   "main": "gruntfile.js",
-  "repository": {
-    "type": "git",
-    "url": "git@bitbucket.org:ozorix/easymoney-web.git"
-  },
   "scripts": {
     "start": "npm install && grunt inject"
   },
