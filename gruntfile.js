@@ -629,7 +629,7 @@ module.exports = function(grunt) {
   function getFileTemplate(name, ext, route, type, viewPath) {
     // controllers
     if (ext === 'controller.js')
-      return 'app.controller(\'' + upperFirstLetter(name) + 'Ctrl\', function(){\n  \n});';
+      return 'app.controller(\'' + upperFirstLetter(name) + 'Ctrl\', function () {\n  \n});';
 
     // views
     else if (ext === 'jade')
@@ -645,27 +645,27 @@ module.exports = function(grunt) {
 
     // directives
     else if (ext === 'directive.js')
-      return 'app.directive(\'' + name + '\', function(){\n  // Runs during compile\n  return {\n    controller: \'' + upperFirstLetter(name) + 'Ctrl\',\n    restrict: \'A\', // E = Element, A = Attribute, C = Class, M = Comment\n    templateUrl: \'' + viewPath + name + '.jade\',\n    link: function(scope, element, attrs, controller) {\n\n    }\n  };\n});';
+      return 'app.directive(\'' + name + '\', function () {\n  // Runs during compile\n  return {\n    controller: \'' + upperFirstLetter(name) + 'Ctrl\',\n    restrict: \'A\', // E = Element, A = Attribute, C = Class, M = Comment\n    templateUrl: \'' + viewPath + name + '.jade\',\n    link: function(scope, element, attrs, controller) {\n\n    }\n  };\n});';
 
     // services
     else if (ext === 'service.js')
-      return 'app.service(\'' + upperFirstLetter(name) + '\', function(){\n  \n});';
+      return 'app.service(\'' + upperFirstLetter(name) + '\', function () {\n  \n});';
 
     // services
     else if (ext === 'factory.js')
-      return 'app.factory(\'' + upperFirstLetter(name) + '\', function(){\n  \n});';
+      return 'app.factory(\'' + upperFirstLetter(name) + '\', function () {\n  \n});';
 
     // filters
     else if (ext === 'filter.js')
-      return 'app.filter(\'' + name + 'Filter\', function(){\n  \n});';
+      return 'app.filter(\'' + name + 'Filter\', function () {\n  \n});';
 
     // configs
     else if (ext === 'config.js')
-      return '// ' + name + 'dependent constants\napp.constant(\'' + upperFirstLetter(name) + '\', {\n  \n})\n\n// config\n.config(function(){\n  \n});';
+      return '// ' + name + 'dependent constants\napp.constant(\'' + upperFirstLetter(name) + '\', {\n  \n})\n\n// config\n.config(function () {\n  \n});';
 
     // tests
     else if (ext === 'spec.js')
-      return 'describe(\'' + route + ' ' + type + '\', function(){\n  \n});';
+      return 'describe(\'' + route + ' ' + type + '\', function () {\n  \n});';
   }
 
   /*
